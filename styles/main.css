@@ -1,0 +1,520 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.app {
+    height: 100vh;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home {
+  height: 100vh;
+  width: 1400px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 584px;
+  height: 362px;
+  background-image: url(../assets/bg-pattern-top-desktop.svg);
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1085px;
+  height: 673px;
+  background-image: url(../assets/bg-pattern-bottom-desktop.svg);
+}
+
+.main {
+  width: 1110px;
+  height: 235px;
+  position: absolute;
+  margin: 127px 165px 438px 165px;
+  
+}
+
+.introduce {
+  position: inherit;
+  width: 445px;
+  height: 235px;
+}
+
+.title {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.71429px;
+  color: #512051;
+}
+
+.text {
+  margin-top: 6px;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  color: #927B91;
+}
+
+.starbox {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  width: 540px;
+  height: 200px;
+}
+
+.starbox1 {
+  width: 445px;
+  height: 56px;
+  position: absolute;
+  left: 0;
+  top: 0;  
+  background-color: aliceblue;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #F7F2F7
+}
+
+.starbox2 {
+  width: 445px;
+  height: 56px;
+  position: absolute;
+  left: 47.5px;
+  top: 72px; 
+  background-color: aliceblue;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #F7F2F7
+}
+
+.starbox3 {
+  width: 445px;
+  height: 56px;
+  position: absolute;
+  right: 0;
+  bottom: 0;  
+  background-color: aliceblue;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #F7F2F7
+}
+.star1 {
+  position: absolute;
+  left: 32px;
+  top: 20px;
+  bottom: 20px;
+}
+
+.star2 {
+  position: absolute;
+  left: 57px;
+  top: 20px;
+  bottom: 20px;
+}
+
+.star3 {
+  position: absolute;
+  left: 82px;
+  top: 20px;
+  bottom: 20px;
+}
+
+.star4 {
+  position: absolute;
+  left: 107px;
+  top: 20px;
+  bottom: 20px;
+}
+
+.star5 {
+  position: absolute;
+  left: 132px;
+  top: 20px;
+  bottom: 20px;
+}
+
+.startext {
+  position: absolute;
+  left: 181px;
+  top: 20px;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  color: #512051;
+}
+
+.container {
+  width: 1110px;
+  height: 266px;
+  position: absolute;
+  margin: 434px 165px 100px 165px;
+}
+
+.name1 {
+  width: 350px;
+  height: 234px;
+  position: absolute;
+  left: 0;
+  top: 0;  
+  background: #512051;
+  border-radius: 8px;
+}
+
+.name2 {
+  width: 350px;
+  height: 234px;
+  position: absolute;
+  left: 380px;
+  top: 16px;
+  background: #512051;
+  border-radius: 8px;
+}
+
+.name3 {
+  width: 350px;
+  height: 234px;
+  position: absolute;
+  right: 0;
+  bottom: 0;  
+  background: #512051;
+  border-radius: 8px;
+}
+
+.card {
+  width: 160px;
+  height: 40px;
+  margin: 40px 158px 154px 32px;
+  position: absolute;
+}
+
+.person {
+  width:40px; 
+  height:40px; 
+  border-radius:50%; 
+  overflow:hidden;
+  position: absolute;
+  left: 0;
+}
+
+.thename {
+  position: absolute;
+  right: 0;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin-top: 5px;
+  white-space:nowrap
+}
+
+.verified {
+  position: absolute;
+  right: 0;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #EE69A4; 
+  margin-top: 5px;
+  white-space:nowrap
+}
+
+.describe {
+  width: 286px;
+  height: 88px;
+  position: absolute;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.232143px;
+  color: #FFFFFF;  
+  margin: 106px 32px 40px 60px;
+}
+
+/*  mobile
+---------------------------*/
+@media (max-width: 600px) {
+.app {
+  height: 100vh;
+  background: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.home {
+  height: 100vh;
+  width: 374px;
+  height: 1520px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+}
+
+.main {
+  width: 327px;
+  height: 526px;
+  position: absolute;
+  margin-top: 80px ;
+  margin-left: 24px;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 374px;
+  height: 232px;
+  background-image: url(../assets/bg-pattern-top-desktop.svg);
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1085px;
+  height: 673px;
+  background-image: url(../assets/bg-pattern-bottom-desktop.svg);
+}
+
+.introduce {
+
+  width: 327px;
+  height: 220px;
+}
+
+.starbox {
+  position: absolute;
+  margin: 0px auto;
+  top: 100px;
+  width: 327px;
+  height: 266px;
+}
+
+.starbox1 {
+  width: 327px;
+  height: 78px;
+  position: absolute;
+  left: 0;
+  top: 0;  
+  background-color: aliceblue;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #F7F2F7;
+}
+
+.starbox2 {
+  width: 327px;
+  height: 78px;
+  position: absolute;
+  left: 0;
+  top: 95px;  
+  background-color: aliceblue;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #F7F2F7
+}
+
+.starbox3 {
+  width: 327px;
+  height: 78px;
+  position: absolute;
+  left: 0;
+  bottom: 0;  
+  background-color: aliceblue;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #F7F2F7
+}
+.star1 {
+  position: absolute;
+  left: 105px;
+  top: 16px;
+  bottom: 46.23px;
+}
+
+.star2 {
+  position: absolute;
+  left: 130px;
+  top: 16px;
+  bottom: 46.23px;
+}
+
+.star3 {
+  position: absolute;
+  left: 155px;
+  top: 16px;
+  bottom: 46.23px;
+}
+
+.star4 {
+  position: absolute;
+  left: 180px;
+  top: 16px;
+  bottom: 46.23px;
+}
+
+.star5 {
+  position: absolute;
+  left: 205px;
+  top: 16px;
+  bottom: 46.23px;
+}
+
+.startext {
+  margin: 16px ;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  color: #512051;
+}
+
+.name1 {
+  width: 327px;
+  height: 248px;
+  background: #512051;
+  border-radius: 8px;
+}
+
+.name2 {
+  width: 327px;
+  height: 248px;
+  background: #512051;
+  border-radius: 8px;
+}
+
+.name3 {
+  width: 327px;
+  height: 248px;
+  background: #512051;
+  border-radius: 8px;
+}
+
+.card {
+  width: 160px;
+  height: 40px;
+  margin: 40px 158px 154px 32px;
+  position: absolute;
+}
+
+.person {
+  width:40px; 
+  height:40px; 
+  border-radius:50%; 
+  overflow:hidden;
+  position: absolute;
+  left: 0;
+}
+
+.thename {
+  position: absolute;
+  right: 0;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin-top: 5px;
+  white-space:nowrap
+}
+
+.verified {
+  position: absolute;
+  right: 0;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #EE69A4; 
+  margin-top: 5px;
+  white-space:nowrap
+}
+
+.describe {
+  width: 286px;
+  height: 88px;
+  position: absolute;
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.232143px;
+  color: #FFFFFF;  
+  margin: 106px 32px 40px 60px;
+}
+
+  
+  
+}
